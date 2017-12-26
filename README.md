@@ -34,3 +34,5 @@ cd /data/tmp/work/wrk && nohup printf "\nLoad started at `date`\n" >> wrk.log &&
  
 Note You really should try different -t (threads) -c (concurrent connections) options to find the option which suites you best.
 4.6. If you want to stop the process or if you disconnected from the session and connected again determine PID with `ps aux | grep wrk` and then do kill -2 <PID> twice. Statistical info of wrk should be available in /data/tmp/work/wrk.log. Sometimes you may need to do kill -2 to stop the process. If you use some other signal with kill command (like kill -9) you'll loose wrk statistical output. kill -2 is like pressing Ctrl - C in interactive app.
+  
+More info on general usage of this tool is here: github.com/wg/wrk
